@@ -13,7 +13,7 @@ FROM openjdk:17-jdk-alpine
 RUN apk update && apk add --no-cache bash && rm -rf /var/cache/apk/*
 RUN apk add --update --no-cache netcat-openbsd
 
-COPY --from=build /build/target/springboot-backend-0.0.1-SNAPSHOT.jar .
+COPY --from=build /build/target/demo-0.0.1-SNAPSHOT.jar .
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
