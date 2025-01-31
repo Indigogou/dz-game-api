@@ -22,4 +22,9 @@ class DemoApplicationTests {
 		String body = this.restTemplate.getForObject("/", String.class);
 		assertEquals("Spring is here!", body);
 	}
+	@Test
+	void homeResponseFalse() {
+		String body = this.restTemplate.getForObject("/", String.class);
+		assertEquals("Spring is here!", body);
+	}
 }
