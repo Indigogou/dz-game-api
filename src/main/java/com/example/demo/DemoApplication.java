@@ -15,6 +15,11 @@ public class DemoApplication {
 		return "Spring is here!";
 	}
 
+	@GetMapping("/page")
+	public String page() {
+		return "page is here!";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
